@@ -1,0 +1,23 @@
+{
+  "name": "VoiceOfTwitch2",
+  "version": "0.0.0",
+  "description": "Voice of Twitch 2 -----------------",
+  "main": "twitchlistener.js",
+  "dependencies": {
+    "irc": "~0.3.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/espehel/VoiceOfTwitch2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/espehel/VoiceOfTwitch2/issues"
+  },
+  "homepage": "https://github.com/espehel/VoiceOfTwitch2"
+}

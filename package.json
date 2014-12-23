@@ -4,7 +4,9 @@
   "description": "Voice of Twitch 2 -----------------",
   "main": "twitchlistener.js",
   "dependencies": {
-    "irc": "~0.3.7"
+    "irc": "~0.3.7",
+    "porter-stemmer": "^0.9.1",
+    "natural": "^0.1.29"
   },
   "devDependencies": {},
   "scripts": {

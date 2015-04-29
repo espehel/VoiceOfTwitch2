@@ -35,11 +35,11 @@ function checkHamming(oldTerms, newTerms){
     var score = 0;
     if (oldTerms.length == newTerms.length)
         for (var i = 0; i < oldTerms.length; i++) {
-        var lenght = oldTerms[i].Length();
+        var length = oldTerms[i].length;
         var upperLimit;
-        if (lenght < 2)
+        if (length < 2)
             continue;
-        else if (lenght == 2)
+        else if (length == 2)
             upperLimit = 1;
         else
             upperLimit = 2;
@@ -55,8 +55,8 @@ function checkHamming(oldTerms, newTerms){
 function checkHammingDistance(source, target, upperLimit) {
     var distance = 0;
 
-    if (source.length() == target.length()) {
-        for (var i = 0; i < source.Length; i++) {
+    if (source.length == target.length) {
+        for (var i = 0; i < source.length; i++) {
             if (source.charAt(i) != target.charAt(i)) {
                 distance++;
             }

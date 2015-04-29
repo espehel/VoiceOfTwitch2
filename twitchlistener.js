@@ -8,10 +8,16 @@ statements.insertStatement("test2");
 statements.insertStatement("test3");
 statements.insertStatement("test2");
 statements.insertStatement("test3");
-statements.insertStatement("test3");
+statements.insertStatement("test3");*/
 
-statements.printStatements();*/
+//statements.printStatements();
 
+module.exports.getStatements = function(){
+	return statements.getStatements();
+}
+module.exports.getStatementsByScore = function(){
+	return statements.getStatements();
+}
 
 var bot = new irc.Client(config.server, config.botname, {
 	channels: config.channels,
@@ -20,11 +26,14 @@ var bot = new irc.Client(config.server, config.botname, {
 });
 
 bot.addListener('message', function(from, to, message){
-    //console.log(from + ' => ' + to + ': ' + message);
+    console.log(from + ' => ' + to + ': ' + message);
     statements.insertStatement(message);
 });
 
 bot.addListener('error', function(message) {
     console.log('error: ', message);
+});
+bot.addListener('raw', function(message) {
+    console.log(message.server +'('+message.rawCommand+'): ',message.args);
 });
 

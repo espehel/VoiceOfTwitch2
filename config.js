@@ -1,9 +1,9 @@
 var config = {
-	channels: ["#dotapit"],
+	channels: ["#nl_kripp"],
 	server: "irc.twitch.tv",
-	botname: "Espen307",
+	botname: "VoTbot",
 	port: "6667",
-	pass: "oauth:arzn22p9nyk8laep9t5jj8ccz42w3z4"
+	pass: "oauth:vdwf1akgqz0nos5rq40ao72ipei8vs"
 };
 
 module.exports = config;

@@ -16,7 +16,11 @@ module.exports.getStatements = function(){
 	return statements.getStatements();
 }
 module.exports.getStatementsByScore = function(){
-	return statements.getStatements();
+	var data = statements.getStatements();
+    data.sort(function(a,b){
+        return b.score- a.score;
+    });
+    return data;
 }
 
 var bot = new irc.Client(config.server, config.botname, {

@@ -6,7 +6,7 @@ var router = express.Router();
  */
 router.get('/statementlist', function(req, res) {
     var ircBot = req.ircBot;
-    res.json(ircBot.getStatements());
+    res.json(ircBot.getStatementsByScore());
 });
 
 module.exports = router;
